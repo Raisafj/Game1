@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Congratulations</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Keania One"
+      rel="stylesheet"
+    />
+    <style>
+      a:link {
+        color: #fffefe;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #fff6f6;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #f8f8f8;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Keania One", "monospace", "san-serif";
+        font-size: 22px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Keania One", "monospace", "san-serif";
+        font-size: 22px;
+        /* font-family: monospace, san-serif; */
+      }
+      .hero {
+        width: 1280px;
+        height: 800px;
+
+        background-image: linear-gradient(
+          to top,
+          #3b41c5 0%,
+          #a981bb 49%,
+          #ffc8a9 100%
+        );
+
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        overflow: hidden;
+      }
+      .heart img {
+        width: 150px;
+        animation: heart 7s linear infinite;
+      }
+      .heart {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        bottom: -150px;
+      }
+
+      @keyframes heart {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-80vh);
+          opacity: 0;
+        }
+      }
+      .heart img:nth-child(1) {
+        animation-delay: 2s;
+        width: 25px;
+      }
+      .heart img:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .heart img:nth-child(3) {
+        animation-delay: 3s;
+        width: 25px;
+      }
+      .heart img:nth-child(4) {
+        animation-delay: 4.5s;
+        width: 0px;
+      }
+      .heart img:nth-child(5) {
+        animation-delay: 3s;
+      }
+      .heart img:nth-child(6) {
+        animation-delay: 6s;
+        width: 20px;
+      }
+      .heart img:nth-child(7) {
+        animation-delay: 4.5s;
+        width: 35px;
+      }
+      .link {
+        font-size: 15px;
+        position: absolute;
+        top: 86%;
+        right: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <center>
+        <h1>Congratulations</h1>
+        <p style="height:1600px; font-size:18px;">
+          You have made it to the date
+        </p>
+      </center>
+    </div>
+    <div class="link"><a href="cargame.html"> Play Again </a></div>
+    <div class="heart">
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+      <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710" />
+    </div>
+
+    <script>
+      function play() {
+        var audio = new Audio("audio.mp3");
+        audio.play();
+      }
+    </script>
+    <button onclick="play(); play"></button>
+  </body>
+</html>
