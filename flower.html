@@ -14,7 +14,7 @@
       html {
         box-sizing: border-box;
         font-size: 10px;
-/*         background: #38775d; */
+        /*         background: #38775d; */
         background: #bbf197;
       }
 
@@ -62,7 +62,9 @@
 
       .hole:after {
         display: block;
-        background: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgrass.png?v=1606864024344)bottom center no-repeat;
+        background: url(
+            https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgrass.png?v=1606864024344
+          )bottomcenterno-repeat;
         background-size: contain;
         content: "";
         width: 100%;
@@ -121,6 +123,26 @@
       let timeUp = false;
       let score = 0;
 
+      var bgsound = document.getElementById("audio.mp3");
+      var normal_volume = 0.1;
+      bgsound.volume = normal_volume;
+
+      function mute_volume() {
+        bgsound.volume = 0;
+      }
+
+      function unmute_volume() {
+        bgsound.volume = normal_volume;
+      }
+
+      function mutenomute() {
+        if (bgsound.volume == normal_volume) {
+          mute_volume();
+        } else {
+          unmute_volume();
+        }
+      }
+
       function randomTime(min, max) {
         return Math.round(Math.random() * (max - min) + min);
       }
@@ -169,5 +191,14 @@
 
       flower.forEach(flower => flower.addEventListener("click", bonk));
     </script>
+    <audio id="Audio" loop autoplay>
+      <source src="audio.mp3" type="audio/mpeg" />
+      <!-- Retro Game 01 by Miguel Ángel Zaragozá de León is licensed under CC - BY - 3.0 -->
+    </audio>
+    <div class="mbutton">
+      <button class="mutebutton" onclick="mutenomute()" type="button">
+        MUTE
+      </button>
+    </div>
   </body>
 </html>

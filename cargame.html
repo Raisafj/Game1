@@ -274,6 +274,33 @@
         }
         return "#" + c() + c() + c();
       }
+     var bgsound = document.getElementById("audio.mp3");
+     var normal_volume = 0.1;
+     bgsound.volume = normal_volume;
+
+     function mute_volume() {
+       bgsound.volume = 0;
+     }
+
+    function unmute_volume() {
+       bgsound.volume = normal_volume;
+     }
+
+    function mutenomute() {
+      if (bgsound.volume == normal_volume) {
+        mute_volume();
+      } else {
+        unmute_volume();
+      }
+    }
+
     </script>
+    <audio id="Audio" loop autoplay>
+  <source src="audio.mp3" type="audio/mpeg">
+     <!-- Retro Game 01 by Miguel Ángel Zaragozá de León is licensed under CC - BY - 3.0 -->
+</audio>
+<div class="mbutton">
+  <button class="mutebutton" onclick="mutenomute()" type="button">MUTE</button>
+</div>
   </body>
 </html>
