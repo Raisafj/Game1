@@ -61,8 +61,7 @@
 
       .hole:after {
         display: block;
-        background: url("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgrass.png?v=1606864024344")
-          bottom center no-repeat;
+        background: url("https://cdn.glitch.com/10c291f2-1f7e-452f-a127-0954ff7a5656%2Fgrass.png?v=1606507318373) bottom center no-repeat");
         background-size: contain;
         content: "";
         width: 100%;
@@ -73,7 +72,7 @@
       }
 
       .flower {
-        background: url("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fflower.png?v=1606863975354")
+        background: url("https://cdn.glitch.com/10c291f2-1f7e-452f-a127-0954ff7a5656%2Fflower.png?v=1606507419680")
           bottom center no-repeat;
         background-size: 40%;
         position: absolute;
@@ -113,35 +112,13 @@
       </div>
     </div>
 
-    <script>
+     <script>
       const holes = document.querySelectorAll(".hole");
       const scoreBoard = document.querySelector(".score");
       const flower = document.querySelectorAll(".flower");
       let lastHole;
       let timeUp = false;
       let score = 0;
-
-      var bgsound = document.getElementById(
-        "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
-      );
-      var normal_volume = 0.1;
-      bgsound.volume = normal_volume;
-
-      function mute_volume() {
-        bgsound.volume = 0;
-      }
-
-      function unmute_volume() {
-        bgsound.volume = normal_volume;
-      }
-
-      function mutenomute() {
-        if (bgsound.volume == normal_volume) {
-          mute_volume();
-        } else {
-          unmute_volume();
-        }
-      }
 
       function randomTime(min, max) {
         return Math.round(Math.random() * (max - min) + min);
@@ -190,6 +167,26 @@
       }
 
       flower.forEach(flower => flower.addEventListener("click", bonk));
+       
+       var bgsound = document.getElementById("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191");
+            var normal_volume = 0.1;
+            bgsound.volume = normal_volume;
+
+            function mute_volume() {
+                bgsound.volume = 0;
+            }
+
+            function unmute_volume() {
+                bgsound.volume = normal_volume;
+            }
+
+            function mutenomute() {
+                if (bgsound.volume == normal_volume) {
+                    mute_volume();
+                } else {
+                    unmute_volume();
+                }
+            }
     </script>
     <audio id="Audio" loop autoplay>
       <source
