@@ -1,32 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
     <title>intro</title>
     <style>
-      * {
+      /* * {
         margin: 0;
         padding: 0;
         font-family: "Courier New", Courier, monospace;
         box-sizing: border-box;
-      }
+      } */
+
+
+
       body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        flex-direction: column;
-        background-color: #321e38;
+        background: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472) no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+        background-size: cover;
       }
+
+
       .container {
-       width: 1280px;
-        height: 800px; 
-        background-image: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472);
-        background-size: 100%;
-        position: fixed;
-        overflow: hidden;
+        display: flex;
+      flex-direction: row;
+     justify-content: center;
+     cursor: pointer;
+       
       }
+    
+
+      .container2 {
+        display: flex;
+      flex-direction: row;
+     justify-content: center;
+     cursor: pointer;
+       
+      }
+
+
+      .container3 {
+        display: flex;
+      flex-direction: row;
+     justify-content: center;
+     cursor: pointer;
+       
+      }
+
 
       a {
         position: relative;
@@ -155,33 +176,41 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <p class="title">TimTim's First Date!</p>
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Start
-      </a>
+    <p class="title">TimTim's First Date!</p>
+    <div class="pagebox">
+        <div class="container">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Start
+            </a> </div>
+      
+      
+            <div class="container2">
+              <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Map
+                </a></div>
+       
+                <div class="container3">
+                  <a href="c.html">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+              
+                      Statement
+                    </a> </div>
+            
 
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Map
-      </a>
-      <a href="c.html">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-        Statement
-      </a>
-
-      <!-- <div class="statement"><a href="statement1.html"> Statement</a></div> -->
     </div>
+    
+      <!-- <div class="statement"><a href="statement1.html"> Statement</a></div> -->
+    
   </body>
 </html>
