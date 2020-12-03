@@ -99,39 +99,45 @@
         }
       }
       window.onscroll = yScrollHandler;
-      
-       var bgsound = document.getElementById("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191");
-            var normal_volume = 0.1;
-            bgsound.volume = normal_volume;
 
-            function mute_volume() {
-                bgsound.volume = 0;
-            }
+      var bgsound = document.getElementById(
+        "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
+      );
+      var normal_volume = 0.1;
+      bgsound.volume = normal_volume;
 
-            function unmute_volume() {
-                bgsound.volume = normal_volume;
-            }
+      function mute_volume() {
+        bgsound.volume = 0;
+      }
 
-            function mutenomute() {
-                if (bgsound.volume == normal_volume) {
-                    mute_volume();
-                } else {
-                    unmute_volume();
-                }
-            }
+      function unmute_volume() {
+        bgsound.volume = normal_volume;
+      }
+
+      function mutenomute() {
+        if (bgsound.volume == normal_volume) {
+          mute_volume();
+        } else {
+          unmute_volume();
+        }
+      }
     </script>
   </head>
 
   <body>
-    
     <audio id="Audio" loop autoplay>
-  <source src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191" type="audio/mpeg">
-     <!-- Retro Game 01 by Miguel Ángel Zaragozá de León is licensed under CC - BY - 3.0 -->
-</audio>
-<div class="mbutton">
-  <button class="mutebutton" onclick="mutenomute()" type="button">MUTE</button>
-</div>
-    
+      <source
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
+        type="audio/mpeg"
+      />
+      <!-- Retro Game 01 by Miguel Ángel Zaragozá de León is licensed under CC - BY - 3.0 -->
+    </audio>
+    <div class="mbutton">
+      <button class="mutebutton" onclick="mutenomute()" type="button">
+        MUTE
+      </button>
+    </div>
+
     <center>
       <h1>You are almost there!</h1>
 
@@ -148,17 +154,33 @@
 
     <a href="flower.html">
       <div id="garden">
-        <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgrass.png?v=1606864024344" />
+        <img
+          src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgrass.png?v=1606864024344"
+        />
       </div>
     </a>
     <div class="butterfly">
-      <img src="golden.png" />
-      <img src="golden1.png" />
-      <img src="golden3.png" />
-      <img src="golden1.png" />
-      <img src="golden.png" />
-      <img src="golden3.png" />
-      <img src="golden1.png" />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden.png?v=1607034053385"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden1.png?v=1607034080999"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden3.png?v=1607034096801"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden1.png?v=1607034080999"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden.png?v=1607034053385"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden3.png?v=1607034096801"
+      />
+      <img
+        src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fgolden1.png?v=1607034080999"
+      />
     </div>
   </body>
 </html>
