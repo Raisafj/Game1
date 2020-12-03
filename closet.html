@@ -8,7 +8,7 @@
       body {
         background: url(
             https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fcloset.jpg?v=1606991354652
-          )no-repeat center center fixed;
+          )no-repeatcentercenterfixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -23,9 +23,6 @@
     </style>
 
     <script>
-      alert("Help TimTim get ready!");
-      alert("Get him ready by mtaching his outfit");
-
       document.addEventListener("DOMContentLoaded", () => {
         const cardArray = [
           {
@@ -176,9 +173,11 @@
         }
 
         createBoard();
+        alert("Help TimTim get ready!");
+        alert("Get him ready by mtaching his outfit");
       });
-      
-       var bgsound = document.getElementById(
+
+      var bgsound = document.getElementById(
         "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
       );
       var normal_volume = 0.1;

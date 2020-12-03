@@ -275,9 +275,9 @@
         }
         return "#" + c() + c() + c();
       }
-      var bgsound = document.getElementById(
-        "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
-      );
+      var bgsound = document.getElementById('Audio');
+      console.log("Hello")
+      console.log(bgsound)
       var normal_volume = 0.1;
       bgsound.volume = normal_volume;
 
@@ -290,6 +290,7 @@
       }
 
       function mutenomute() {
+        c
         if (bgsound.volume == normal_volume) {
           mute_volume();
         } else {
