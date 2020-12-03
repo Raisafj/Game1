@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>intro</title>
     <style>
-      ody {
-        background: url(closet.jpg)no-repeatcentercenterfixed;
+      body {
+        background: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fcloset.jpg?v=1606991354652) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -25,52 +25,64 @@
         const cardArray = [
           {
             name: "fries",
-            img: "images/fries.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ffries.png?v=1606991418470"
           },
           {
             name: "fries",
-            img: "images/fries.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ffries.png?v=1606991418470"
           },
           {
             name: "teeth",
-            img: "images/teeth.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fteeth.png?v=1606991378708"
           },
           {
             name: "teeth",
-            img: "images/teeth.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fteeth.png?v=1606991378708"
           },
 
           {
             name: "keys",
-            img: "images/keys.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fkeys.png?v=1606991385290"
           },
           {
             name: "keys",
-            img: "images/keys.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fkeys.png?v=1606991385290"
           },
           {
             name: "tie",
-            img: "images/tie.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ftie.png?v=1606991372834"
           },
           {
             name: "tie",
-            img: "images/tie.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ftie.png?v=1606991372834"
           },
           {
             name: "money",
-            img: "images/money.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmoney.png?v=1606991380867"
           },
           {
             name: "money",
-            img: "images/money.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmoney.png?v=1606991380867"
           },
           {
             name: "cap",
-            img: "images/cap.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fcap.png?v=1606991388441"
           },
           {
             name: "cap",
-            img: "images/cap.png"
+            img:
+              "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fcap.png?v=1606991388441"
           }
         ];
 
@@ -86,7 +98,7 @@
         function createBoard() {
           for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement("img");
-            card.setAttribute("src", "images/blank.png");
+            card.setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fblank.png?v=1606991391434");
             card.setAttribute("data-id", i);
             card.addEventListener("click", flipCard);
             grid.appendChild(card);
@@ -100,26 +112,26 @@
           const optionTwoId = cardsChosenId[1];
 
           if (optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute("src", "images/blank.png");
-            cards[optionTwoId].setAttribute("src", "images/blank.png");
+            cards[optionOneId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fblank.png?v=1606991391434");
+            cards[optionTwoId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fblank.png?v=1606991391434");
             alert("You have clicked the same image!");
           } else if (cardsChosen[0] === cardsChosen[1]) {
             alert("You found a match");
-            cards[optionOneId].setAttribute("src", "images/white.png");
-            cards[optionTwoId].setAttribute("src", "images/white.png");
+            cards[optionOneId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fback.png?v=1606991406223");
+            cards[optionTwoId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fback.png?v=1606991406223");
             cards[optionOneId].removeEventListener("click", flipCard);
             cards[optionTwoId].removeEventListener("click", flipCard);
             cardsWon.push(cardsChosen);
           } else {
-            cards[optionOneId].setAttribute("src", "images/blank.png");
-            cards[optionTwoId].setAttribute("src", "images/blank.png");
+            cards[optionOneId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fblank.png?v=1606991391434");
+            cards[optionTwoId].setAttribute("src", "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fblank.png?v=1606991391434");
             alert("Hurry up! You are getting late");
           }
           cardsChosen = [];
           cardsChosenId = [];
           resultDisplay.textContent = cardsWon.length;
           if (cardsWon.length === cardArray.length / 2) {
-            resultDisplay.textContent = "Congratulations! You found them all!";
+            resultDisplay.textContent = "Congratulations! TimTim is ready";
           }
         }
 
