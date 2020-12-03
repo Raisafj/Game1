@@ -275,26 +275,26 @@
         }
         return "#" + c() + c() + c();
       }
-      var bgsound = document.getElementById('Audio');
-      console.log("Hello")
-      console.log(bgsound)
-      var normal_volume = 0.1;
-      bgsound.volume = normal_volume;
 
+      var isMuted = false;
       function mute_volume() {
-        bgsound.volume = 0;
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 0;
+        isMuted = true;
       }
 
       function unmute_volume() {
-        bgsound.volume = normal_volume;
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 1.0;
+        isMuted = false;
       }
 
       function mutenomute() {
-        c
-        if (bgsound.volume == normal_volume) {
-          mute_volume();
-        } else {
+        let muteElement = document.getElementById("Audio");
+        if (isMuted) {
           unmute_volume();
+        } else {
+          mute_volume();
         }
       }
     </script>
