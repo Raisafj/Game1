@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro</title>
+    <style>
+  body {
+  background: url(map.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* body {
+  background: #aaaaaa;
+} */
+
+#container {
+  width: 1024px;
+  height: 768px;
+  background: transparent;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.photo {
+  width: 1024px;
+  position: absolute;
+  top: 96px;
+  left: 0px;
+}
+
+.direction_button {
+  width: 342px;
+  height: 572px;
+  position: absolute;
+}
+
+.direction_button:hover {
+  border: 2px dashed rgb(100, 20, 71);
+  opacity: 0.5;
+}
+
+#LEFT {
+  left: 0px;
+  top: 96px;
+}
+
+#FORWARD {
+  left: 342px;
+  top: 96px;
+}
+
+#RIGHT {
+  left: 684px;
+  top: 96px;
+}
+
+  </style>
+</head>
+<body>
+    <div id=container>
+        <img class="photo" src="./images/room1-east.png">	
+
+        <a href="room1-north.html"><div class="direction_button" id="LEFT"></div></a>
+        <a href="room1-south.html"><div class="direction_button" id="RIGHT"></div></a>				
+    </div>
+    
+</body>
+</html>
