@@ -177,25 +177,25 @@
         alert("Get him ready by mtaching his outfit");
       });
 
-      var bgsound = document.getElementById(
-        "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
-      );
-      var normal_volume = 0.1;
-      bgsound.volume = normal_volume;
-
+      var isMuted = false;
       function mute_volume() {
-        bgsound.volume = 0;
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 0;
+        isMuted = true;
       }
 
       function unmute_volume() {
-        bgsound.volume = normal_volume;
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 1.0;
+        isMuted = false;
       }
 
       function mutenomute() {
-        if (bgsound.volume == normal_volume) {
-          mute_volume();
-        } else {
+        let muteElement = document.getElementById("Audio");
+        if (isMuted) {
           unmute_volume();
+        } else {
+          mute_volume();
         }
       }
     </script>
