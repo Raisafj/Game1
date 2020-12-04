@@ -3,7 +3,14 @@
     <meta charset="UTF-8" />
 
     <title>index</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sail"
+      rel="stylesheet"
+    />
+
+    <!--    <link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet'> -->
     <style>
+      <style>
       /* * {
         margin: 0;
         padding: 0;
@@ -14,40 +21,35 @@
 
 
       body {
-        background: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472) no-repeat center center fixed;
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
+        background: url(
+            https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472
+          )no-repeatcentercenterfixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
       }
 
-
       .container {
         display: flex;
-      flex-direction: row;
-     justify-content: center;
-     cursor: pointer;
-       
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
       }
-    
 
       .container2 {
         display: flex;
-      flex-direction: row;
-     justify-content: center;
-     cursor: pointer;
-       
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
       }
-
 
       .container3 {
         display: flex;
-      flex-direction: row;
-     justify-content: center;
-     cursor: pointer;
-       
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
       }
-
 
       a {
         position: relative;
@@ -158,7 +160,8 @@
       .title {
         font-size: 100px;
         color: rgb(219, 148, 169);
-        font-family: Georgia, "Times New Roman", Times, serif;
+
+        font-family: "Sail", "Times New Roman", Times, serif;
         text-align: center;
         animation: animate 2s linear infinite;
       }
@@ -175,7 +178,7 @@
       }
     </style>
     <script>
-     var isMuted = false;
+      var isMuted = false;
       function mute_volume() {
         let muteElement = document.getElementById("Audio");
         muteElement.volume = 0;
@@ -199,7 +202,7 @@
     </script>
   </head>
   <body>
-  <audio id="Audio" loop autoplay>
+    <audio id="Audio" loop autoplay>
       <source
         src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
         type="audio/mpeg"
@@ -213,39 +216,38 @@
     </div>
     <p class="title">TimTim's First Date!</p>
     <div class="pagebox">
-        <div class="container">
-            <a href="sleeping.html">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Start
-            </a> </div>
-      
-      
-            <div class="container2">
-              <a href="map.html">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  Map
-                </a></div>
-       
-                <div class="container3">
-                  <a href="c.html">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-              
-                      Statement
-                    </a> </div>
-            
+      <div class="container">
+        <a href="sleeping.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Start
+        </a>
+      </div>
 
+      <div class="container2">
+        <a href="map.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Map
+        </a>
+      </div>
+
+      <div class="container3">
+        <a href="c.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          Statement
+        </a>
+      </div>
     </div>
-    
-      <!-- <div class="statement"><a href="statement1.html"> Statement</a></div> -->
-    
+
+    <!-- <div class="statement"><a href="statement1.html"> Statement</a></div> -->
   </body>
 </html>
