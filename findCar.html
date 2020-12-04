@@ -7,13 +7,16 @@
 
   <style>
     body {
-      background: url(
-          https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fbkg2.png?v=1607030862601
-        )no-repeat center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
+
+    }
+    
+    #container {
+      background: url("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fbkg2.png?v=1607030862601");
       background-size: cover;
+      width: 1280px;
+      height: 800px;
+      overflow: hidden;
+      border: 1px solid black;
     }
 
     #parent {
@@ -62,7 +65,8 @@
   <body>
     <!--     style="background-image: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmap.jpg?v=1606991363165)">
     <!-- background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); -->
-
+    <div id="container">
+      
     <div id="parent">
       <div id="background"></div>
 
@@ -87,6 +91,8 @@
           height="200"
         />
       </div>
+    </div>
+      
     </div>
   </body>
 </html>
