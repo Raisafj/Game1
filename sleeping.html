@@ -6,32 +6,33 @@
     <title>intro</title>
     <style>
       body {
-        background: url(
-            https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fempty%20bedroom.jpg?v=1606991726351
-          )no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background-color: rgb(13, 39, 42);
+      }
+      .hero {
+        width: 1280px;
+        height: 800px;
+
+        background-image: url(" https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fempty%20bedroom.jpg?v=1606991726351");
+
         background-size: cover;
-        
-        
-        
+        background-position: center;
+        position: fixed;
+        overflow: hidden;
       }
       .timtim {
-        margin-left: 700px;
-        margin-top: 150px;
+        margin-left: 600px;
+        margin-top: 200px;
         cursor: pointer;
-      
       }
       .timtim:hover {
         -webkit-filter: brightness(80%);
       }
 
       .phone {
-      margin-left: 15%;
-      margin-top: -3%;
-      cursor: pointer;
-      position: absolute;
+        margin-left: 15%;
+        margin-top: -7%;
+        cursor: pointer;
+        position: absolute;
       }
 
       .phone:hover {
@@ -75,9 +76,6 @@
           transform: translate(1px, -2px) rotate(-1deg);
         }
       }
-      
-      
-      
     </style>
 
     <script>
@@ -85,29 +83,22 @@
       alert("This is his big oppotunity");
       alert("TimTim needs to reach Cece before she leaves");
       alert("Chek your messages");
-      
-      
-      
-      
-      
+
       function onImageClickShowAlerts() {
         console.log("Hello");
         alert("Hello!");
         alert("Where are you??");
         alert("I am almost here");
         alert("Hello!? I knew this was a mistake");
-        alert("WAKE UP TimTim");
+        alert("Are you coming??");
       }
     </script>
-
-    
   </head>
 
   <body>
-    
-    <div class="pagebox">
+    <div class="hero">
       <div class="timtim">
-        <a href="./closet.html">
+        <a href="closet.html">
           <img
             src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fsleeping.png?v=1607032652334"
           />
