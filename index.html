@@ -8,26 +8,25 @@
       rel="stylesheet"
     />
 
-    <!--    <link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet'> -->
-
+    
     <style>
-      /* * {
-        margin: 0;
-        padding: 0;
-        font-family: "Courier New", Courier, monospace;
-        box-sizing: border-box;
-      } */
+       
 
       body {
-        background: url(
-            https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472
-          )no-repeat center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+       background-color: rgb(26, 2, 34);
+        
       }
-      
+       .box {
+            width: 1280px;
+            height: 800px;
+
+            background-image: url("  https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fintro%403x-100.jpg?v=1606991360472");
+
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            overflow: hidden;
+        }
          
       .container {
         display: flex;
@@ -158,7 +157,7 @@
       }
 
       .title {
-        font-size: 100px;
+        font-size: 90px;
         color: rgb(219, 148, 169);
 
         font-family: "Sail", "Times New Roman", Times, serif;
@@ -202,6 +201,7 @@
     </script>
   </head>
   <body>
+    <div class="box">
     <audio id="Audio" loop autoplay>
       <source
         src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
@@ -215,7 +215,7 @@
       </button>
     </div>
     <p class="title">TimTim's First Date!</p>
-    <div class="pagebox">
+    
       <div class="container">
         <a href="sleeping.html">
           <span></span>
@@ -248,6 +248,6 @@
       </div>
     </div>
 
-    <!-- <div class="statement"><a href="statement1.html"> Statement</a></div> -->
+   
   </body>
 </html>
