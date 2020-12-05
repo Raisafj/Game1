@@ -4,26 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>intro</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Crushed"
-      rel="stylesheet"
-    />
 
     <style>
       body {
-         
-          background-color: rgb(10, 4, 37);
-
+        background-image: radial-gradient(#490000 0%, #000000 74%);
       }
-
-     .box {
-            width: 1280px;
-            height: 800px;
-            background-size: cover;
-            background-position: center;
-            position: fixed;
-            overflow: hidden;
-        }
 
       .image {
         position: relative;
@@ -44,7 +29,7 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         color: #ffffff;
-         font-family: 'Crushed','monospace', 'san-serif';
+        font-family: "Quicksand", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -76,7 +61,7 @@
         transform: translateY(0);
       }
 
-    
+      /* img2 */
 
       .image2 {
         position: relative;
@@ -97,7 +82,7 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         color: #ffffff;
-        font-family: 'Crushed','monospace', 'san-serif';
+        font-family: "Quicksand", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -129,14 +114,14 @@
         transform: translateY(0);
       }
 
-      
+      /* img: 3 */
 
       .image3 {
         position: relative;
         width: 400px;
       }
 
-      .abracadabra {
+      .closet {
         display: block;
         height: 100%;
         width: 100%;
@@ -150,7 +135,7 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         color: #ffffff;
-        font-family: 'Crushed','monospace', 'san-serif';
+        font-family: "Quicksand", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -183,37 +168,30 @@
       }
 
       .imagecontainer {
-         display: flex; 
-         flex-direction: row; 
-         justify-content: center; 
-         cursor: pointer; 
-
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
       }
-      .timtim{
-         position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-        
 
+      .icon {
+        margin right: 50px;
+        cursor: pointer;
       }
-      
     </style>
-    
+    <script></script>
   </head>
 
   <body>
-    <div class="box">
-    
-      <div class="timtim">
-        <a href="index.html">
-          <img 
-            src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ficons8-back-64.png?v=1607084258793" 
-           /> 
+    <div class="pagebox">
+      <div class="icon">
+        <a href="./index.html">
+          <img
+            src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ficons8-back-64.png?v=1607084258793"
+          />
         </a>
       </div>
-
-    
+      
         <div class="imagecontainer">
           <div class="image">
             <a href="flower.html">
@@ -246,7 +224,7 @@
           <div class="image3">
             <a href="closet.html">
               <img
-                class="abracadabra"
+                class="closet"
                 src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmap3.jpg?v=1607005211329"
                 alt="garden"
                 style="height: 823; width: 423;"
@@ -258,7 +236,6 @@
           </div>
         </div>
       </div>
-    
-
+    </div>
   </body>
 </html>
