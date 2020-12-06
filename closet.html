@@ -7,12 +7,11 @@
       body {
         background: url(
             https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2F33333.jpg?v=1607198313732
-          )no-repeat center center fixed;
+          )no-repeatcentercenterfixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        
       }
       .container {
         display: flex;
@@ -86,17 +85,16 @@
             img:
               "https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fcap.png?v=1606991388441"
           }
-        ];
+        ;
 
         cardArray.sort(() => 0.5 - Math.random());
 
-                    const container = document.querySelector(".container");
+        const container = document.querySelector(".container");
         const scoreGame = document.querySelector("#result");
-                 var cardSelected = [];
-                    var cardSelectedId = [];
-                                 var rightCard = [];
+        var cardSelected = [];
+        var cardSelectedId = [];
+        var rightCard = [];
 
-        
         function box() {
           for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement("img");
@@ -110,8 +108,7 @@
           }
         }
 
-        
-        function cardsThatMatch () {
+        function cardsThatMatch() {
           var cards = document.querySelectorAll("img");
           const firstOptionId = cardSelectedId[0];
           const secondOptionId = cardSelectedId[1];
@@ -161,14 +158,13 @@
           }
         }
 
-        
         function turnOver() {
           var cardsId = this.getAttribute("data-id");
           cardSelected.push(cardArray[cardsId].name);
           cardSelectedId.push(cardsId);
           this.setAttribute("src", cardArray[cardsId].img);
           if (cardSelected.length === 2) {
-            setTimeout(cardsThatMatch , 100);
+            setTimeout(cardsThatMatch, 100);
           }
         }
 
@@ -177,11 +173,7 @@
         alert("He now has to get ready by remembering");
         alert("It's memory test! Find pairs of each object");
         alert("and help TimTim get ready");
-  
       });
-      
-      
-      
 
       var isMuted = false;
       function mute_volume() {
