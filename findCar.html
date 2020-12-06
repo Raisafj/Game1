@@ -6,67 +6,69 @@
       href="https://fonts.googleapis.com/css?family=Crushed"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: "Keania One", "monospace", "san-serif";
+        font-size: 22px;
+        background-color: rgb(40, 5, 44);
+      }
+
+      #container {
+        background: url("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faaa.png?v=1607211619606");
+        background-size: cover;
+        width: 4020px;
+        height: 700px;
+        overflow: hidden;
+        border: 1px solid black;
+      }
+
+      #parent {
+        position: relative;
+        background-repeat: repeat;
+      }
+
+      #background {
+        position: absolute;
+        background-color: #4e6d4e;
+        /* background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); */
+      }
+
+      #timtim {
+        position: fixed;
+        top: 500px;
+        left: 350px;
+      }
+
+      .text_1_square {
+        width: 500px;
+        background: #606e50;
+        position: fixed;
+        border: 5px solid #4e6d4e;
+        top: 300px;
+        left: 400px;
+        text-align: center;
+      }
+
+      .text_1 {
+        font-size: 20px;
+        font-family: "Crushed", "monospace", "san-serif";
+        color: #e5e9f0;
+        font-weight: bold;
+      }
+
+      #link_1 {
+        width: 500px;
+        height: 1500px;
+        position: relative;
+        right: -4020px;
+        top: 600px;
+      }
+    </style>
   </head>
 
-  <style>
-    body {
-    }
-
-    #container {
-      background: url("https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faaa.png?v=1607211619606");
-/*       background-size: cover; */
-      width: 4030px;
-      height: 800px;
-      overflow: hidden;
-       border: 1px solid black; 
-    }
-
-    #parent {
-      position: relative;
-      background-repeat: repeat;
-    }
-
-    #background {
-      position: absolute;
-      background-color: #4e6d4e;
-      /* background-image: linear-graient(-60deg, #16a085 0%, #f4d03f 100%); */
-    }
-
-    #timtim {
-      position: fixed;
-      top: 500px;
-      left: 350px;
-    }
-
-    .text_1_square {
-      width: 500px;
-      background: #606e50;
-      position: fixed;
-      border: 5px solid #4e6d4e;
-      top: 300px;
-      left: 400px;
-      text-align: center;
-    }
-
-    .text_1 {
-      font-size: 20px;
-      font-family: "Crushed", "monospace", "san-serif";
-      color: #e5e9f0;
-      font-weight: bold;
-    }
-
-    #link_1 {
-      width: 500px;
-      height: 1500px;
-      position: relative;
-      right: -4020px;
-      top: 600px;
-    }
-  </style>
-
   <body>
-<!--        style="background-image: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmap.jpg?v=1606991363165)"> -->
-    
+    <!--     style="background-image: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fmap.jpg?v=1606991363165)">
+    <!-- background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); -->
     <div id="container">
       <div id="parent">
         <div id="background"></div>
