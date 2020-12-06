@@ -3,31 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>Collect flowers!</title>
-<link
+    <link
       href="https://fonts.googleapis.com/css?family=Crushed"
       rel="stylesheet"
     />
-   
-    <!-- <link href='https://fonts.googleapis.com/css?family=Vollkorn SC' rel='stylesheet'> -->
-  
-    <style>
-      html {
-        box-sizing: border-box;
-        font-size: 10px;
-        background: #d3f09e;
-      }
 
+    <style>
       *,
       *:before,
       *:after {
         box-sizing: inherit;
       }
-
+      html {
+        box-sizing: border-box;
+        font-size: 10px;
+        background: #d3f09e;
+      }
       body {
         padding: 0;
         margin: 0;
-     
-         font-family: 'Crushed','monospace', 'san-serif';
+
+        font-family: "Crushed", "monospace", "san-serif";
       }
 
       h1 {
@@ -84,13 +80,15 @@
       .hole.up .flower {
         top: 0;
       }
-         .mbutton {
+
+      .mbutton {
         position: absolute;
         left: 0px;
         top: 0px;
       }
     </style>
   </head>
+
   <body>
     <h1>collect flower! <span class="score">0</span></h1>
     <button onclick="startGame()">Start!</button>
@@ -116,7 +114,7 @@
       </div>
     </div>
 
-     <script>
+    <script>
       const holes = document.querySelectorAll(".hole");
       const scoreBoard = document.querySelector(".score");
       const flower = document.querySelectorAll(".flower");
@@ -132,7 +130,7 @@
         const idx = Math.floor(Math.random() * holes.length);
         const hole = holes[idx];
         if (hole === lastHole) {
-          console.log("Ah nah thats the same one bud");
+          console.log("opps...not this");
           return randomHole(holes);
         }
         lastHole = hole;
@@ -158,21 +156,20 @@
         // setTimeout(() => timeUp = true, 10000)
       }
 
-      function bonk(e) {
+      function hit(e) {
         if (score > 3) {
           window.location.href = "Congrats.html";
           console.log("Next level.");
         } else {
-          // (!e.isTrusted) return; // cheater!
           score++;
           this.parentNode.classList.remove("up");
           scoreBoard.textContent = score;
         }
       }
 
-      flower.forEach(flower => flower.addEventListener("click", bonk));
-       
-       var isMuted = false;
+      flower.forEach(flower => flower.addEventListener("click", hit));
+
+      var isMuted = false;
       function mute_volume() {
         let muteElement = document.getElementById("Audio");
         muteElement.volume = 0;
@@ -194,7 +191,7 @@
         }
       }
     </script>
-   <audio id="Audio" loop autoplay>
+    <audio id="Audio" loop autoplay>
       <source
         src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
         type="audio/mpeg"
