@@ -3,19 +3,19 @@
   <head>
     <title>find car</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Keania One"
+      href="https://fonts.googleapis.com/css?family=Crushed"
       rel="stylesheet"
     />
-    <script type="text/javascript"></script>
+
     <style>
-      ::-webkit-scrollbar {
-        display: none;
-      }
+      /*         ::-webkit-scrollbar { */
+      /*             display: none; */
+      /*         } */
+
       body {
-        font-family: "Keania One", "monospace", "san-serif";
+        font-family: "Crushed", "monospace", "san-serif";
         font-size: 22px;
         background-color: rgb(40, 5, 44);
-        /* background-image:url(aaa.png); */
       }
 
       #parent {
@@ -24,7 +24,6 @@
         width: 4030px;
         height: 800px;
         background-image: url(https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faaa.png?v=1607211619606);
-
         overflow: hidden;
       }
 
@@ -35,8 +34,7 @@
 
       #timtim {
         position: fixed;
-
-        top: 560px;
+        top: 550px;
         left: 350px;
       }
 
@@ -45,8 +43,8 @@
         background: #44284d;
         position: absolute;
         border: 5px solid #5b4e6d;
-        top: 550px;
-        left: 400px;
+        top: 20px;
+        left: 20px;
         text-align: center;
       }
 
@@ -63,6 +61,7 @@
         position: absolute;
         left: 3500px;
         top: 600px;
+        z-index: 1;
       }
     </style>
   </head>
@@ -73,16 +72,24 @@
 
       <div class="text_sq">
         <div class="text">
-          Use the arrows on the keyboard to get Timtim to the car.
+          Scroll to get Timtim to the car.
         </div>
       </div>
 
       <a href="cargame.html">
-        <div id="link"><img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2FArtboard%202.png?v=1606997115546" height="200" /></div>
+        <div id="link">
+          <img
+            src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2FArtboard%202.png?v=1606997115546"
+            height="200"
+          />
+        </div>
       </a>
 
       <div id="timtim">
-        <img src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ftimtim.png?v=1607030446880" height="200" />
+        <img
+          src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Ftimtim.png?v=1607030446880"
+          height="200"
+        />
       </div>
     </div>
   </body>
