@@ -125,14 +125,56 @@
       .link:hover {
         transform: scale(1.2);
       }
+      .mbutton {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index:1;
+      }
     </style>
 
     <script>
       alert("Congratulations! You've made it to the date!!");
+
+      <!-- Start of mute functionality -->
+      var isMuted = false;
+      function mute_volume() {
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 0;
+        isMuted = true;
+      }
+
+      function unmute_volume() {
+        let muteElement = document.getElementById("Audio");
+        muteElement.volume = 1.0;
+        isMuted = false;
+      }
+
+      function mutenomute() {
+        let muteElement = document.getElementById("Audio");
+        if (isMuted) {
+          unmute_volume();
+        } else {
+          mute_volume();
+        }
+      }
+      <!-- End of mute functionality -->
     </script>
   </head>
 
   <body>
+    <audio id="Audio" loop autoplay>
+        <source
+          src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Faudio.mp3?v=1606865560191"
+          type="audio/mpeg"
+        />
+        <!-- Retro Game 01 by Miguel Ángel Zaragozá de León is licensed under CC - BY - 3.0 -->
+      </audio>
+      <div class="mbutton">
+        <button class="mutebutton" onclick="mutenomute()" type="button">
+          MUTE
+        </button>
+      </div>
     <div class="hero">
       <div class="link"><a href="index.html"> Play Again </a></div>
     </div>
@@ -159,6 +201,7 @@
       <img
         src="https://cdn.glitch.com/3d19ac36-4a6a-4f87-a5d6-c2dac247d213%2Fph.png?v=1606864212710"
       />
+      
     </div>
   </body>
 </html>
